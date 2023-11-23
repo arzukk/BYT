@@ -1,30 +1,32 @@
 package Byt6;
+import lombok.*;
 
-class Builder implements IBuilder {
+@AllArgsConstructor
+class AlternativeSkincareRoutineBuilder implements IBuilder {
     private SkincareRoutine skincareRoutine;
 
-    public Builder() {
+    public AlternativeSkincareRoutineBuilder() {
         this.skincareRoutine = new SkincareRoutine();
     }
 
     @Override
     public void buildCleanser() {
-        skincareRoutine.setCleanser("Gentle Cleanser");
+        skincareRoutine.setCleanser("Foaming Cleanser");
     }
 
     @Override
     public void buildToner() {
-        skincareRoutine.setToner("Alcohol-Free Toner");
+        skincareRoutine.setToner("Refreshing Toner");
     }
 
     @Override
     public void buildMoisturizer() {
-        skincareRoutine.setMoisturizer("Hydrating Moisturizer");
+        skincareRoutine.setMoisturizer("Oil-Free Moisturizer");
     }
 
     @Override
     public void buildSunscreen() {
-        skincareRoutine.setSunscreen("SPF 30 Sunscreen");
+        skincareRoutine.setSunscreen("SPF 50 Sunscreen");
     }
 
     @Override
@@ -32,3 +34,4 @@ class Builder implements IBuilder {
         return skincareRoutine;
     }
 }
+
