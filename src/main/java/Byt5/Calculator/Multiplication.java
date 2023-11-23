@@ -1,4 +1,4 @@
-package Calculator;
+package Byt5.Calculator;
 
 class Multiplication implements Operations {
     private Operations next;

@@ -1,4 +1,4 @@
-package Calculator;
+package Byt5.Calculator;
 
 interface Operations {
     void setNext(Operations next);
